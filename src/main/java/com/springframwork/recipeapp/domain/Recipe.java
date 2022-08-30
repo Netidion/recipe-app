@@ -2,7 +2,6 @@ package com.springframwork.recipeapp.domain;
 
 import lombok.Data;
 
-import javax.management.ValueExp;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -51,5 +50,4 @@ public class Recipe {
         this.ingredients.add(ingredient);
         return this;
     }
-
 }
