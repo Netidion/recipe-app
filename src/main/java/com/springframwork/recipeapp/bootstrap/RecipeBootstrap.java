@@ -66,13 +66,13 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 
         Optional<UnitOfMeasure> pintUOMOptional = unitOfMeasureRepository.findByUom("Pint");
 
-        if(!pintUOMOptional.isPresent()){
+        if(!pintUOMOptional.isPresent()) {
             throw new RuntimeException("Expected UOM Not Found!");
         }
 
         Optional<UnitOfMeasure> cupUOMOptional = unitOfMeasureRepository.findByUom("Cup");
 
-        if(!cupUOMOptional.isPresent()){
+        if(!cupUOMOptional.isPresent()) {
             throw new RuntimeException("Expected UOM Not Found!");
         }
 
